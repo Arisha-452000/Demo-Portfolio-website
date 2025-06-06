@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/314fd83478.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="preloader"></div>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/p1.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="fade-slide-in">Cybersecurity Expert</p>
+                <h1 class="typing-effect-scale">Hello, I'm <span>ABCDEF</span> </br> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="sticky-background">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Welcome to my portfolio! I am a dedicated cybersecurity expert with a passion for protecting digital assets 
+                        and ensuring robust online security. With years of experience in identifying vulnerabilities, preventing 
+                        cyber threats, and implementing advanced security solutions, I specialize in safeguarding systems against 
+                        evolving risks.I believe that cybersecurity is not just about technology but also about empowering individuals and  
+                        organizations to adopt secure practices. Let’s work together to create a safer digital world.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>CyberSecurity</span><br>Protecting your digital assets
+                            </li>
+                            <li>
+                                <span>Network Security</span><br>Protecting your network 
+                            </li>
+                            <li>
+                                <span>SOC Analyst</span><br>monitor threats
+                            </li>
+                            <li>
+                                <span>Azure admininstrator</span><br>cloud network
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2025 - current</span><br>As a CTO
+                            </li>
+                            <li>
+                                <span>2023 - 2025</span><br>As a Security anlyst 
+                            </li>
+                            <li>
+                                <span>2020 - 2023</span><br>As a Network Engineer
+                            </li>
+                            <li>
+                                <span>Azure admininstrator</span><br>As a SoC analyst
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2025 - current</span><br>Master (continue...)
+                            </li>
+                            <li>
+                                <span>2023 - 2025</span><br>BS hons. 
+                            </li>
+                            <li>
+                                <span>2020 - 2023</span><br>Intermediate
+                            </li>
+                            <li>
+                                <span>Azure admininstrator</span><br>Matric
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+   
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h2>Network Security</h2>
+                    <p>
+                        Our Network Security Services are designed to safeguard 
+                        your organization's critical systems and data from cyber 
+                        threats. We provide comprehensive solutions to ensure the 
+                        confidentiality, integrity, and availability of your network 
+                        infrastructure
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>SOC </h2>
+                    <p>
+                        Our SOC Services provide 24/7 monitoring, detection, 
+                        and response to cyber threats, ensuring your organization's 
+                        security posture remains strong in an ever-evolving threat 
+                        landscape.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h2>Cloud Security</h2>
+                    <p>
+                        Our Cloud Security Services are designed to protect your organization's
+                         cloud infrastructure, applications, and data from evolving cyber 
+                         threats. We help you securely adopt and manage cloud technologies 
+                         while ensuring compliance, reliability, and peace of mind.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- blog section -->
+<div id="blog">
+    <div class="container">
+        <h1 class="sub-title">Latest Blogs</h1>
+        <div class="blog-navigation">
+            <!-- Prev button -->
+            <button id="prev-btn" class="slider-btn">&#8249;</button>
+            
+            <!-- Blog slider -->
+            <div class="blog-slider">
+                <div class="blog-item" style="background-image: url('/images/p6.jpg');">
+                    <div class="blog-content">
+                        <h2>Understanding Cybersecurity Basics</h2>
+                        <p>Essential practices to protect your digital footprint.</p>
+                        <a href="/blog1.html" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-item" style="background-image: url('/images/p6.jpg');">
+                    <div class="blog-content">
+                        <h2>Top 5 Cloud Security Tips</h2>
+                        <p>How to secure your cloud environment effectively.</p>
+                        <a href="/blog2.html" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-item" style="background-image: url('/images/p6.jpg');">
+                    <div class="blog-content">
+                        <h2>The Future of Cyber Threats</h2>
+                        <p>Strategies to tackle emerging cyber challenges.</p>
+                        <a href="/blog3.html" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-item" style="background-image: url('/images/p6.jpg');">
+                    <div class="blog-content">
+                        <h2>Understanding Cybersecurity Basics</h2>
+                        <p>Essential practices to protect your digital footprint.</p>
+                        <a href="/blog1.html" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-item" style="background-image: url('/images/p6.jpg');">
+                    <div class="blog-content">
+                        <h2>The Future of Cyber Threats</h2>
+                        <p>Strategies to tackle emerging cyber challenges.</p>
+                        <a href="/blog3.html" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Next button -->
+            <button id="next-btn" class="slider-btn">&#8250;</button>
+        </div>
+    </div>
+</div>
+
+
+<!----Portfolio---->
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="/images/w1.jpg">
+            <div class="layer">
+                <h3>Risk Assessment</h3>
+                <p>
+                    Identifying vulnerabilities before they become your worst nightmare.
+                </p>
+                <a href="#"><i class="fa-solid fa-bug"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="/images/w3.jpg">
+            <div class="layer">
+            <h3>24/7 Monitoring</h3>
+                <p>
+                    Your digital fortress, guarded around the clock by vigilant eyes.
+                </p>
+                <a href="#"><i class="fa-solid fa-tv"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="/images/w2.jpg">
+            <div class="layer">
+            <h3>Training Sessions</h3>
+                <p>
+                    Empowering your team with the skills to fend off cyber attacks.
+                </p>
+                <a href="#"><i class="fa-solid fa-person-chalkboard"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+
+<!-----Contact------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>contact@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>03123466789</p>
+                <div class="social-icons">
+                    <a href="https://LinkedIn.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://snapchat.com/"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+                <a href="/fake CV.pdf" download class="btn btn2 pulse">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="You Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message/Query"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<div class="copyright">
+    <p>
+        copyright  © A.A ...  Made by Me
+    </p>
+</div>
+</div>
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRKIrG-du1ypddq-HKl7jdyxdmsToeaHDIFgB7a8hk9bhTvusWzF4BriNJUCITbQBk/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+    // Preloader
+window.addEventListener('load', function () {
+    document.getElementById('preloader').style.display = 'none';
+});
+</script>
+
+<script>
+// Pointer Effect
+const pointer = document.createElement('div');
+pointer.id = 'custom-pointer';
+document.body.appendChild(pointer);
+
+document.addEventListener('mousemove', (e) => {
+    pointer.style.left = `${e.clientX}px`;
+    pointer.style.top = `${e.clientY}px`;
+});
+
+  </script>
+
+<script>
+
+// Blog Slider Navigation
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.blog-slider');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    if (slider && prevBtn && nextBtn) {
+        // Scroll left
+        prevBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        // Scroll right
+        nextBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    } else {
+        console.error('Slider or buttons not found in the DOM.');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.blog-slider');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    // Scroll left (Previous)
+    prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -350, behavior: 'smooth' }); // Adjust scroll amount to match the blog width
+    });
+
+    // Scroll right (Next)
+    nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: 350, behavior: 'smooth' }); // Adjust scroll amount to match the blog width
+    });
+});
+
+
+
+
+</script>
+
+<script>
+
+// Add a custom pointer
+const pointer = document.createElement('div');
+pointer.id = 'custom-pointer';
+document.body.appendChild(pointer);
+
+// Update pointer position based on mouse movement
+document.addEventListener('mousemove', (e) => {
+    pointer.style.left = `${e.pageX}px`;
+    pointer.style.top = `${e.pageY}px`;
+});
+
+// Show pointer on mousemove
+document.addEventListener('mouseenter', () => {
+    pointer.style.display = 'block';
+});
+
+// Hide pointer when leaving the viewport
+document.addEventListener('mouseleave', () => {
+    pointer.style.display = 'none';
+});
+
+// Enhanced Pointer Script
+const pointer = document.createElement('div');
+pointer.id = 'custom-pointer';
+document.body.appendChild(pointer);
+
+document.addEventListener('mousemove', (e) => {
+    pointer.style.left = `${e.pageX}px`;
+    pointer.style.top = `${e.pageY}px`;
+});
+
+// Hide pointer when leaving the viewport
+document.addEventListener('mouseleave', () => {
+    pointer.style.opacity = '0';
+});
+document.addEventListener('mouseenter', () => {
+    pointer.style.opacity = '1';
+});
+
+</script>
+
+</body>
+</html>
+
+
+
